@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    width: 480px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+div#message-box {
+    width: 480px;
+}
+
+textarea#message-text {
+    width: 480px;
+    height: 56px;
+}
+
+input#message-update-button {
+    float: right;
+    margin: 5px 0;
+}

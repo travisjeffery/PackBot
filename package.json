@@ -1,0 +1,8 @@
+{ "name": "PackBot"
+, "version": "1.0.0"
+, "dependencies": {
+    "express": "2.5.1"
+  , "faye": "0.7.0" 
+  , "mu": "0.5.2"
+  }
+}
