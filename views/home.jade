@@ -1,17 +1,4 @@
-- if (!everyauth.loggedIn)
-  #google-login
-    p 
-      | Login with Google: 
-
-      a(href='/auth/google', style='border: 0px')
-        img(style='border: 0px', src='https://www.google.com/favicon.ico')
-- else
-  - if (everyauth.google)
-    p
-      = everyauth.google.user.id
-  h3
-    a(href='/logout') Logout
-
+- if (everyauth.google)
   #messages
 
   #message-box

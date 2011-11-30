@@ -3,7 +3,10 @@ html
   head
     title= typeof(title) !== 'undefined' ? title : 'PackBot'
   body
-    h1 PackBot
+    #user-info
+      include login
+
+    h1#logo PackBot
 
     #main
       != body

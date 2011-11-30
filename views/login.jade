@@ -1,0 +1,9 @@
+- if (!everyauth.loggedIn)
+  | Login with Google: 
+  a(href='/auth/google', style='border: 0px')
+    img(style='border: 0px', src='https://www.google.com/favicon.ico')
+- else
+  - if (everyauth.google)
+    = everyauth.google.user.id 
+    |  |
+    a(href='/logout') Logout
