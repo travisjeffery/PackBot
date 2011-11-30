@@ -1,0 +1,22 @@
+!!! 5
+html
+  head
+    title= typeof(title) !== 'undefined' ? title : 'PackBot'
+  body
+    h1 PackBot
+
+    #main
+      != body
+
+  link(rel="stylesheet", type="text/css", href="/css/gh-buttons.css")
+  link(rel="stylesheet", type="text/css", href="/css/style.css")
+
+  script(src="/faye.js")
+  script(src="/js/json2.js")
+  script(src="/js/jquery.js")
+  script(src="/js/ICanHaz.js")
+  script(src="/js/client.js")
+
+  script(id="message", type="text/html")
+    #message
+      {{message}}

@@ -1,0 +1,21 @@
+- if (!everyauth.loggedIn)
+  #google-login
+    p 
+      | Login with Google: 
+
+      a(href='/auth/google', style='border: 0px')
+        img(style='border: 0px', src='https://www.google.com/favicon.ico')
+- else
+  - if (everyauth.google)
+    p
+      = everyauth.google.user.id
+  h3
+    a(href='/logout') Logout
+
+  #messages
+
+  #message-box
+    form#message
+      textarea(name="message", id="message-text", cols='79', autofocus="true")
+      br
+      input#message-update-button(type="submit", value="Update", class="button")
