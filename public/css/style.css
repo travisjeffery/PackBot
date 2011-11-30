@@ -9,6 +9,10 @@ div#message-box {
     width: 480px;
 }
 
+div#user-info {
+  float: right;
+}
+
 textarea#message-text {
     width: 480px;
     height: 56px;
